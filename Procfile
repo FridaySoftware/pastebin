@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -b $PORT run:application
+web: gunicorn run:application --timeout 100 --log-file=-
