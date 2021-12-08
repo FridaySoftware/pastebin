@@ -1,5 +1,6 @@
 flask
 flask-restful
+psycopg2
 flask-sqlalchemy
 sqlalchemy==1.3.23
 APScheduler
