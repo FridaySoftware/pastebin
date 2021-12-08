@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy, Pagination
 from werkzeug.exceptions import NotFound
 
 from src.app import app
-
+import os
 db = SQLAlchemy()
 
 endless = datetime.datetime(9999, 12, 31)
@@ -112,6 +112,6 @@ class Service:
         db.session.commit()
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data/paste.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URL")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 service = Service(app)
