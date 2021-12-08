@@ -2,39 +2,21 @@
 
   "name": "pastebin",
 
-  "description": "A barebones Python app, which can easily be deployed to Heroku.",
+  "description": "A Test.",
 
   "image": "heroku/python",
 
-  "repository": "https://github.com/heroku/python-getting-started",
+  "repository": "https://github.com/FridaySoftware/pastebin",
 
-  "keywords": ["python", "django" ],
+  "keywords": ["python", "pastebin"],
 
-  "addons": [ "heroku-postgresql" ],
+  "addons": ["heroku-postgresql"],
 
   "env": {
 
-    "SECRET_KEY": {
+    "DB_URI": {
 
-      "description": "The secret key for the Django application.",
-
-      "generator": "secret"
-
-    }
-
-  },
-
-  "environments": {
-
-    "test": {
-
-      "scripts": {
-
-        "test-setup": "python manage.py collectstatic --noinput",
-
-        "test": "python manage.py test"
-
-      }
+      "description": "The secret key for the Django application."
 
     }
 
