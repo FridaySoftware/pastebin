@@ -1,25 +1,8 @@
 {
-
   "name": "pastebin",
-
   "description": "A Test.",
-
   "image": "heroku/python",
-
   "repository": "https://github.com/FridaySoftware/pastebin",
-
   "keywords": ["python", "pastebin"],
-
-  "addons": ["heroku-postgresql"],
-
-  "env": {
-
-    "DB_URI": {
-
-      "description": "The secret key for the Django application."
-
-    }
-
-  }
-
+  "addons": ["heroku-postgresql"]
 }
