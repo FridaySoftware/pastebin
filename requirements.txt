@@ -1,5 +1,6 @@
 flask
 flask-restful
+tzlocal==2.1
 psycopg2
 flask-sqlalchemy
 sqlalchemy==1.3.23
